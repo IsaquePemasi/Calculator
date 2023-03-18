@@ -62,7 +62,6 @@ namespace Calculator
 }
 /*
 
-criari um static void Multiplicacao()
 criar um static void Menu()
 no final de cada função colocar o Menu()
 criar a opção sair com o System.Enviroment.Exit(0)
