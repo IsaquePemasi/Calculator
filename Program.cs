@@ -10,7 +10,7 @@ namespace Calculator
         }
         static void Soma()
         {
-            //Console.Clear();
+            Console.Clear();
             Console.WriteLine("Primeiro valor: ");
             float v1 = float.Parse(Console.ReadLine());
 
@@ -28,7 +28,6 @@ namespace Calculator
 
 /*
 
-invocar ele no main
 criar um static void Subtracao()
 colocar o Console.readkey
 criar um static voide Divisao()
