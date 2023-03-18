@@ -6,7 +6,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Multiplicacao();
+            Menu();
         }
         static void Soma()
         {
@@ -23,6 +23,8 @@ namespace Calculator
 
             Console.WriteLine("O resultado da soma é " + resultado);
             Console.ReadKey();
+            Menu();
+
         }
         static void Subtracao()
         {
@@ -33,7 +35,11 @@ namespace Calculator
             float v2 = float.Parse(Console.ReadLine());
             float resultado = v1 - v2;
             Console.WriteLine($"O resultado da subtração é {resultado}");
+
             Console.ReadKey();
+            Menu();
+
+
         }
         static void Divisao()
         {
@@ -45,6 +51,8 @@ namespace Calculator
             float resultado = v1 / v2;
             Console.WriteLine($"O resultado da divisão é {resultado}");
             Console.ReadKey();
+            Menu();
+
         }
         static void Multiplicacao()
         {
@@ -56,13 +64,33 @@ namespace Calculator
             float resultado = v1 * v2;
             Console.WriteLine($"O resultado da multiplicação é {resultado}");
             Console.ReadKey();
+            Menu();
 
+
+        }
+
+        static void Menu()
+        {
+            Console.Clear();
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("1 - Soma");
+            Console.WriteLine("2 - Subtração");
+            Console.WriteLine("3 - Divisão");
+            Console.WriteLine("4 - Multiplicação");
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Escolha uma opção acima: ");
+            short opcao = short.Parse(Console.ReadLine());
+            switch (opcao)
+            {
+                case 1: Soma(); break;
+                case 2: Subtracao(); break;
+                case 3: Divisao(); break;
+                case 4: Multiplicacao(); break;
+                default: Menu(); break;
+            }
         }
     }
 }
 /*
-
-criar um static void Menu()
-no final de cada função colocar o Menu()
 criar a opção sair com o System.Enviroment.Exit(0)
 */
