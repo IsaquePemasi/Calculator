@@ -22,3 +22,15 @@ namespace Calculator
         }
     }
 }
+
+/*
+criar um static void Soma()
+invocar ele no main
+criar um static void Subtracao()
+colocar o Console.readkey
+criar um static voide Divisao()
+criari um static void Multiplicacao()
+criar um static void Menu()
+no final de cada função colocar o Menu()
+criar a opção sair com o System.Enviroment.Exit(0)
+*/
